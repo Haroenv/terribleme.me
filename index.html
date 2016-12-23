@@ -7,17 +7,34 @@
   <style>
     body {
       margin: 0;
-    }
-
-    img {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+      min-height: 100vh;
       width: 100vw;
-      height: 100vh;
-      display: block;
-      object-fit: contain;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   </style>
 </head>
 <body>
-  <img src="https://scontent-bru2-1.xx.fbcdn.net/v/t31.0-8/11227542_1476540315972945_6299250097511471019_o.jpg?oh=76daafecfff4be0416b7998be6d490a7&oe=58D8B88C">
+  <h1>That was terrible.</h1>
+  <script src="https://haroen.me/floating.js/floating.js"></script>
+  <script>
+  floating({
+    content: '🖕',
+    number: 10,
+    size: [1,10]
+  });
+  floating({
+    content: '🖕',
+    number: 10,
+    size: [1,10],
+    direction: 'reverse'
+  })
+  </script>
 </body>
 </html>
