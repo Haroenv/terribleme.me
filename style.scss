@@ -1,0 +1,32 @@
+---
+---
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+	min-height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	animation-name: pulse;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+	z-index: 10;
+	font-size: 8vw;
+}
+
+@keyframes pulse {
+	0%, 100% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.5);
+	}
+
+}
