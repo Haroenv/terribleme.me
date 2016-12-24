@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,33 +19,12 @@
   <link rel="mask-icon" href="/src/img/safari-pinned-tab.svg" color="#ff0000">
   <meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
   <h1>That was terrible.</h1>
   <script src="https://cdn.rawgit.com/pixelass/console-speak/master/dist/index.js"></script>
   <script src="https://haroen.me/floating.js/floating.js"></script>
-  <script>
-  floating({
-    content: '🖕',
-    number: 5,
-    size: [1,10]
-  });
-  floating({
-    content: '🖕',
-    number: 5,
-    size: [1,10],
-    direction: 'reverse'
-  });
-  floating({
-      content: '🚽',
-      number: 5,
-      size: [1,10]
-  });
-  setTimeout(()=>{
-    console.speak('shame on you',{
-      rate: 0.5,
-      pitch: 0.5
-    });
-  }, 1000);
-  </script>
+  <script src="/src/js/index.js"></script>
 </body>
+
 </html>
